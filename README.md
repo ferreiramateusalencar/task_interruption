@@ -6,7 +6,7 @@
 </h3>
 
 <h4 align="center">
-	🚧  Concluído 🚧
+	✅  Concluído ✅
 </h4>
 
 ---
@@ -41,17 +41,21 @@ A Formação Básica em Software Embarcado da Embarcatech é um programa de capa
 
 ## 🎨 Layout Repositorio Github
 <i>
-Animation-BitDogLab
+task_interruption
 
 - .vscode/&emsp;&emsp;&emsp;&emsp;# Arquivos .json
+  - c_cpp_properties.json
   - cmake-kits.json
   - extensions.json
   - launch.json
   - settings.json
+  - tasks.json
 
 - assets/&emsp;&emsp;&emsp;&emsp;# Midias do Projeto
-
-- lib/&emsp;&emsp;&emsp;&emsp;# biblioteca do projeto
+  - image/
+    - diagram.png
+  - video/
+    - demonstration.mp4
 
 - include/&emsp;&emsp;&emsp;&emsp;# includes do projeto
   - buttons.h
@@ -68,19 +72,21 @@ Animation-BitDogLab
   - matriz_led.c
   - numbers.c
 
+- .gitattributes
+
 - .gitignore
 
 - CMakeLists.txt
 
+- diagram.json&emsp;&emsp;&emsp;&emsp;# Arquivo Wokwi do BitDogLab
+
 - LICENSE
+
+- pico_sdk_import.cmake
 
 - README.md
 
-- diagram.json&emsp;&emsp;&emsp;&emsp;# Arquivo Wokwi do BitDogLab
-
 - task_interruption.c&emsp;&emsp;&emsp;&emsp;# Código principal do projeto
-
-- pico_sdk_import.cmake
 
 - wokwi.toml
 </i>
@@ -88,14 +94,9 @@ Animation-BitDogLab
 ---
 
 ## ⚙️ Funcionalidades
-- Teclado Matricial4X4
 - Teclas Funcionais:
-  - 1 à 8 interação com animações
-  - A desliga leds
-  - B liga LEDs na cor Azul
-  - C liga LEDs na cor Vermelha
-  - D liga LEDs na cor Verde
-  - Botão # liga LEDs na cor Branca
+  - A voltar sprite  da matriz led 5x5
+  - B avançar sprite  da matriz led 5x5
 
 ---
 
@@ -120,10 +121,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
   - Abra o terminal de comando Git Bash 
   - Clone o repositório do GitHub com o comando:
 ```
-$ git clone https://github.com/Embarcatech-Grupo1-Subgrupo3/Animation-BitDogLab.git
+$ git clone https://github.com/ferreiramateusalencar/task_interruption.git
 ```
 - Opção 2:
-  - No repósitorio [Animation-BitDogLab](https://github.com/Embarcatech-Grupo1-Subgrupo3/Animation-BitDogLab) aperte o Botão <i><>code</i>
+  - No repósitorio [Animation-BitDogLab](https://github.com/ferreiramateusalencar/task_interruption) aperte o Botão <i><>code</i>
   - Aperte a opção <i>Dowload ZIP</i>
 
 
@@ -132,7 +133,7 @@ $ git clone https://github.com/Embarcatech-Grupo1-Subgrupo3/Animation-BitDogLab.
 #### Wokwi Web
 - Entre no navegador e digite [Wokwi.com]()
 - Faça Upload dos Arquivos <i>diagram.json</i>
-- Faça upload do aquivo main <i>main.c</i> e da pasta <i>src/</i>
+- Faça upload do aquivo task_interruption <i>task_interruption.c</i> e da pasta <i>src/</i>
 
 #### Extensão Wokwi
 - Abra o Visual Studio
@@ -142,8 +143,8 @@ $ git clone https://github.com/Embarcatech-Grupo1-Subgrupo3/Animation-BitDogLab.
 ```
 [wokwi]
 version = 1
-firmware = 'build/neopixel_pio.hex'
-elf = 'build/neopixel_pio.elf'
+firmware = 'build/task_interruption.hex'
+elf = 'build/task_interruption.elf'
 ```
 - Abra o arquivo <i>diagram.json</i>
 
@@ -159,10 +160,8 @@ elf = 'build/neopixel_pio.elf'
 - Na aba da extensão [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico), aperte para Importar o projeto
 - Compile o projeto
 - Entre na pasta <i>build/</i>
-- Cole o arquivo <i>neopixel_pio.uf2</i> no armazenamento placa BitDog
+- Cole o arquivo <i>task_interruption.uf2</i> no armazenamento placa BitDog
 <br>
-<strong>Obs:É necessário uma Teclado Matricial 4X4 para interagir com a placa e suas animções</strong>
-
 
 ---
 
@@ -203,7 +202,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 👨‍💻 Contribuidores
+## 👨‍💻 Membro
 
 GRUPO 1, SUBGRUPO 3 da Embarcatech <br/>
 Mentor: MANOEL MESSIAS DA SILVA JUNIOR

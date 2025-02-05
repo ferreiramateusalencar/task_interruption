@@ -46,25 +46,11 @@
     { "type": "wokwi-gnd", "id": "gnd5", "top": -316.8, "left": 66.6, "attrs": {} },
     { "type": "wokwi-vcc", "id": "vcc5", "top": -402.44, "left": 67.2, "attrs": {} },
     {
-      "type": "wokwi-membrane-keypad",
-      "id": "keypad1",
-      "top": -616.4,
-      "left": 178.4,
-      "attrs": {}
-    },
-    {
       "type": "wokwi-buzzer",
       "id": "bz1",
       "top": -247.2,
       "left": 347.4,
       "attrs": { "volume": "0.1" }
-    },
-    {
-      "type": "board-ssd1306",
-      "id": "oled1",
-      "top": 3.14,
-      "left": 297.83,
-      "attrs": { "i2cAddress": "0x3c" }
     },
     {
       "type": "wokwi-pushbutton",
